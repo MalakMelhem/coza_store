@@ -1,61 +1,442 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+  <!--custom css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Coza Store - Home</title>
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo/logo-01.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" aria-current="page" href="#">shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" aria-current="page" href="#">features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">contact</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <div class="icon">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </div>
+          <a class="btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+              class="fa fa-bars link-light" aria-hidden="true"></i></a>
+
+
+
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/slider/xslide-05.jpg.pagespeed.ic.qfhdiU1qnW.webp" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/xslide-06.jpg.pagespeed.ic.wPI-RILPEg.webp" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/xslide-07.jpg.pagespeed.ic.hmaiIdWtK7.webp" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 
 
 
 
-   
-    <script src="node_modules/jquery/jquery-3.5.1.slim.min.js"></script>
-    <script src="node_modules/jquery/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-  </body>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>
+  </header>
+  <!--category section-->
+  <section class="category py-5" id="category">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="category-data position-relative">
+            <img src="assets/img/category/xbanner-04.jpg.pagespeed.ic.VA8DOEHVgo.webp" alt="women category"
+              class="img-fluid" onerror="this.src='' " />
+            <div class="category-info position-absolute">
+              <h2 class="category-heading">women</h2>
+              <p>new trend</p>
+              <a class="position-absolute">shop now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="category-data position-relative">
+            <img src="assets/img/category/xbanner-05.jpg.pagespeed.ic.lVhwyHBMl1.webp" alt="men category"
+              class="img-fluid" onerror="this.src='' " />
+            <div class="category-info position-absolute">
+              <h2 class="category-heading">men</h2>
+              <p>new trend</p>
+              <a class="position-absolute category-two">shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-4">
+
+          <div class="category-data position-relative">
+            <img src="assets/img/category/xbanner-07.jpg.pagespeed.ic.-V_El16AGW.webp" alt="warches category"
+              class="img-fluid" onerror="this.src='' " />
+            <div class="category-info position-absolute">
+              <h2 class="category-heading">watches</h2>
+              <p>new trend</p>
+              <a class="position-absolute category-two">shop now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+
+          <div class="category-data position-relative">
+            <img src="assets/img/category/xbanner-08.jpg.pagespeed.ic.43FchFnxFg.webp" alt="bags category"
+              class="img-fluid" onerror="this.src='' " />
+            <div class="category-info position-absolute">
+              <h2 class="category-heading">bags</h2>
+              <p>new trend</p>
+              <a class="position-absolute category-two">shop now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+
+          <div class="category-data position-relative">
+            <img src="assets/img/category/xbanner-09.jpg.pagespeed.ic.6kJod3lIXe.webp" alt="accessories category"
+              class="img-fluid" onerror="this.src='' " />
+            <div class="category-info position-absolute">
+              <h2 class="category-heading">accessories</h2>
+              <p>new trend</p>
+              <a class="position-absolute category-two">shop now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--End category section-->
+
+  <!--product overview section-->
+  <section class="overview py-5" id="overview">
+    <div class="container">
+
+      <h2>product overview</h2>
+      <div class="row justify-content-between flex-row-reverse">
+
+        <div class="col-lg-4 text-center">advance search</div>
+
+        <div class="col-lg-6">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">all products</button>
+              <button class="nav-link" id="nav-women-tab" data-bs-toggle="tab" data-bs-target="#nav-women" type="button"
+                role="tab" aria-controls="nav-women" aria-selected="false">women</button>
+              <button class="nav-link" id="nav-men-tab" data-bs-toggle="tab" data-bs-target="#nav-men" type="button"
+                role="tab" aria-controls="nav-men" aria-selected="false">men</button>
+              <button class="nav-link" id="nav-bag-tab" data-bs-toggle="tab" data-bs-target="#nav-bag" type="button"
+                role="tab" aria-controls="nav-bag" aria-selected="false">bag</button>
+              <button class="nav-link" id="nav-shoes-tab" data-bs-toggle="tab" data-bs-target="#nav-shoes" type="button"
+                role="tab" aria-controls="nav-shoes" aria-selected="false">shoes</button>
+              <button class="nav-link" id="nav-watches-tab" data-bs-toggle="tab" data-bs-target="#nav-watches"
+                type="button" role="tab" aria-controls="nav-watches" aria-selected="false">watches</button>
+            </div>
+          </nav>
+        </div>
+
+        <div class="tab-content mt-5" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/1.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/2.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/3.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/4.webp" />
+                </div>
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/5.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/6.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/7.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/8.webp" />
+                </div>
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/9.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/10.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/11.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/12.webp" />
+                </div>
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/13.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/14.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/15.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/16.webp" />
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-women" role="tabpanel" aria-labelledby="nav-women-tab">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/1.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/2.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/4.webp" />
+                </div>
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/5.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/7.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/8.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/10.webp" />
+                </div>
+                <div class="col-lg-3 mb-3">
+                  <img src="assets/img/producs/13.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/14.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/16.webp" />
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-men" role="tabpanel" aria-labelledby="nav-men-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/3.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/11.webp" />
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/12.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-bag" role="tabpanel" aria-labelledby="nav-bag-tab">
+
+          </div>
+          <div class="tab-pane fade" id="nav-shoes" role="tabpanel" aria-labelledby="nav-shoes-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/9.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-watches" role="tabpanel" aria-labelledby="nav-watches-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="assets/img/producs/15.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+  <!--End product overview section-->
+
+  <!--Start footer section-->
+  <footer class="footer bg-dark" id="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="category touch">
+            <h2 class="text-light my-5">categories</h2>
+            <ul class="list-group">
+              <li><a href="#">women</a></li>
+              <li><a href="#">men</a></li>
+              <li><a href="#">shose</a></li>
+              <li><a href="#">watches</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="category touch">
+            <h2 class="text-light my-5">help</h2>
+            <ul class="list-group">
+              <li><a href="#">track order</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">faqs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="category touch">
+            <h2 class="text-light my-5">get in touch</h2>
+            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96
+              716 6879</p>
+
+            <ul class="">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="category">
+            <h2 class="text-light my-5">newsletter</h2>
+            <form>
+              <input class="bg-dark" type="email" placeholder="email@example.com" />
+              <br />
+              <button class="rounded-pill" type="submit">Subscribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-statment mt-3 text-center">
+        <div class="payments">
+          <img src="assets/img/payment/xicon-pay-01.png.pagespeed.ic.x3ksseq-Ro.webp" alt="">
+          <img src="assets/img/payment/xicon-pay-02.png.pagespeed.ic.VV76jih-LZ.webp" alt="">
+          <img src="assets/img/payment/xicon-pay-03.png.pagespeed.ic.qm10pI94h8.webp" alt="">
+          <img src="assets/img/payment/xicon-pay-04.png.pagespeed.ic.afX_pRP1xW.webp" alt="">
+          <img src="assets/img/payment/xicon-pay-05.png.pagespeed.ic.j9rtlz4R-L.webp" alt="">
+        </div>
+
+        <div class="copy my-3">
+          Copyright &#169;2021 All rights reserved | This template is made with by Colorlib
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!--End footer section-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>

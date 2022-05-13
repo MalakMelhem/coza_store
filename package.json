@@ -9,7 +9,9 @@
   "author": "malak",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "font-awesome": "^4.7.0"
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0"
   }
 }
